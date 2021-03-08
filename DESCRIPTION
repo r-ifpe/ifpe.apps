@@ -12,5 +12,7 @@ LazyData: true
 Depends:
     R (>= 3.6)
 Imports: 
-    dplyr (>= 1.0)
+    DBI,
+    dplyr (>= 1.0),
+    odbc
 RoxygenNote: 7.1.1
