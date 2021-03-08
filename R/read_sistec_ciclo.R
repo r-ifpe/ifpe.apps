@@ -70,7 +70,7 @@ classify_ciclo_status <- function(x) {
         DAYS > 365 ~ "CONCLUIDO",
       TRUE ~ "ATIVO"
     )) %>%
-    select(
+    dplyr::select(
       !!sym("S_NO_CAMPUS"), !!sym("S_NO_CURSO"), !!sym("S_CO_CICLO_MATRICULA"),
       !!sym("S_NO_TIPO"), !!sym("S_NO_OFERTA"), !!sym("S_DT_INICIO_CICLO"),
       !!sym("S_NO_STATUS_CICLO")
